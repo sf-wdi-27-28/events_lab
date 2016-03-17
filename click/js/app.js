@@ -1,21 +1,11 @@
 console.log("Sanity Check: JS is working!");
 
-var startTime; // undefined
-var endTime; // undefined
-var total; // undefined
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-  $(window).on("keypress", function handleKeypress(event){
+  $("span").on("click", function handleClick(event) {
+    var itemText = "You Clicked: " + $(this).text() + " at " + Date.now();
+    $("ul").append("<li>" + itemText + "</li>");
+  });
 
-    if ( startTime ) {
-      endTime = Date.now();
-      total = (endTime - startTime) / 1000;
-      $("#total-time").text( total + " seconds" )
-    } else {
-      startTime = Date.now();
-    }
-
-  })
-
-})
+});

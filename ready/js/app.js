@@ -11,3 +11,7 @@ $(document).ready(function() {
     console.log("Can you make it say \"Go!\"?");
   }
 });
+
+$(document).ready(function(){
+  $("h1").text("Go");
+});

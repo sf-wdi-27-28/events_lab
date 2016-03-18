@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   $(window).on("keypress", function startOrStopTime(event) {
 
-    if (beign) {
+    if (begin) {
       end = Date.now();
       ellapsedTime = (end - begin) / 1000;
       $("#total-time").text(ellapsedTime);

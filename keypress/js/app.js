@@ -6,7 +6,7 @@ $(document).ready(function() {
   var end;
   var ellapsedTime;
 
-  $(window).on("keypress", startOrStopTime(event) {
+  $(window).on("keypress", function startOrStopTime(event) {
 
     if (beign) {
       end = Date.now();

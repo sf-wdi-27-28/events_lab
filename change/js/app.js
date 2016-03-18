@@ -12,6 +12,7 @@ $(document).ready(function() {
         $("#total").val(0);
     };
     initialize();
+
     var totalValue = function() {
         return parseInt($("#total").val());
     };
@@ -28,10 +29,15 @@ $(document).ready(function() {
     };
 
     $("#left").keyup(function() {
+
         return calculateTotal();
     });
     $("#right").keyup(function() {
         return calculateTotal();
+    });
+
+    $(".reset").on("click", function() {
+        initialize();
     });
 
 });

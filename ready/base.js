@@ -1,9 +1,9 @@
 /*
   What needs to change so that the page says "Go!"?
 */
-
+//challenge 1
 $(document).ready(function(){
-  console.log( "The page says:", $("h1").text() );
+  console.log( "The page says:", $("h1").text("GO!") );
 });
 
 $("h1").text("Go!");

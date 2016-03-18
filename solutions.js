@@ -1,6 +1,4 @@
-/*
-  What needs to change so that the page says "Go!"?
-*/
+//1. ready
 
 $(document).ready(function() {
 
@@ -11,4 +9,20 @@ $("h1").text("GO!")
   } else {
     console.log("Can you make it say \"Go!\"?");
   }
+});
+
+//2. submit
+$("a").on("click", function handleClick(event){
+    event.preventDefault();
+});
+
+
+
+//3. change
+
+
+
+//4. click
+$("span").click(function(){
+ $('ul').append("<li>" + $(this).text() + "</li>");
 });

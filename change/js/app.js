@@ -2,11 +2,8 @@ console.log("Sanity Check: JS is working!");
 
 $(document).ready(function() {
 
-    var timestamp = function() {
-        return $("#time").text(Date.now());
-    };
-
     var initialize = function() {
+        $("#time").text(Date.now());
         $("#left").val(0);
         $("#right").val(0);
         $("#total").val(0);
@@ -29,10 +26,11 @@ $(document).ready(function() {
     };
 
     $("#left").keyup(function() {
-
+        $("#time").text(Date.now());
         return calculateTotal();
     });
     $("#right").keyup(function() {
+        $("#time").text(Date.now());
         return calculateTotal();
     });
 

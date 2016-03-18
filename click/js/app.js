@@ -4,8 +4,7 @@ $(document).ready(function() {
 
     var addOnClick = function(event) {
 
-        var buttonHTML = event.target.valueOf();
-        var buttonText = $(buttonHTML).text();
+        var buttonText = $(this).text();
 
         var timestamp = new Date();
         var formattedTimestamp = " Clicked On: " + (timestamp.getMonth()+1) + "/" + timestamp.getDate() + "/" + timestamp.getFullYear() + " @ " + timestamp.getHours() + ":" + timestamp.getMinutes() + ":" + timestamp.getSeconds();

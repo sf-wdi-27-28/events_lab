@@ -3,13 +3,20 @@
 // $(document).ready(function() {
 //
 // });
-var firstPress, lastPress, diff;
-$(window).on("keypress", function startTime(event){
+// var firstPress;
+// var lastPress;
+// var diff;
+var secondPress;
+var startTime;
+var endTime;
 
-  if(firstPress){
-  lastPress = Date.now();
-  diff = (lastPress - firstPress) / 1000;
-}else{
-  firstPress = Date.now();
-}
+$(window).on("keypress", function start(event){
+
+  if(startTime){
+    endTime = Date.now();
+    diff = (endTime - startTime) / 1000;
+    $("#total-time").text(diff + " sec");
+  }else{
+    startTime = Date.now();
+  }
 });

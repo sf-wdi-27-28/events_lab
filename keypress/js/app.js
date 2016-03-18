@@ -9,3 +9,5 @@ if (event.which === 32) {
 console.log(event.timeStamp);
 }
 });
+
+//this is nowhere near done. just hit a wall tonight.

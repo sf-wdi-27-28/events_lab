@@ -10,4 +10,6 @@ $(document).ready(function() {
   } else {
     console.log("Can you make it say \"Go!\"?");
   }
+
+  $('h1').text("go")
 });
